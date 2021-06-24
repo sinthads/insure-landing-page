@@ -11,8 +11,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 0 8rem;
-    padding: 1rem 0;
+    padding: 1rem 8rem;
     color: $veryDarkViolet;
 
     &__logo {
@@ -41,13 +40,21 @@ header {
 
 @media screen and (max-width: $mobile-max-width) {
   header {
+    width: $mobile-max-width;
     .nav {
+      padding: 1rem 2rem;
+
+      &__toggle {
+        display: block;
+      }
+
       &__menu {
         display: none;
       }
 
       &__toggle {
         display: block;
+        cursor: pointer;
       }
     }
   }

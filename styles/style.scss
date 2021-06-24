@@ -31,5 +31,6 @@ body {
   html,
   body {
     font-size: 14px;
+    max-width: $mobile-max-width;
   }
 }

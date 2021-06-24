@@ -1,6 +1,9 @@
 .info {
   margin-top: 8rem;
   padding: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   .advantages {
     display: flex;
@@ -22,6 +25,7 @@
 
   .find-more {
     margin-top: 8rem;
+
     &__container {
       position: relative;
       background: $darkViolet;
@@ -32,6 +36,10 @@
         position: absolute;
         right: 0;
         top: 0;
+      }
+
+      #bg-pattern-how-we-work-mobile {
+        position: absolute;
       }
     }
 
@@ -46,6 +54,58 @@
         position: relative;
         z-index: 2;
         height: fit-content;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: $mobile-max-width) {
+  #bg-pattern-how-we-work-mobile {
+    display: none;
+  }
+}
+
+@media screen and(max-width: $mobile-max-width) {
+  .info {
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+
+    hr {
+      color: rgb(226, 223, 223);
+    }
+
+    .advantages {
+      flex-direction: column;
+
+      &__card {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+    }
+
+    .find-more {
+      margin-bottom: 8rem;
+
+      &__container {
+        #bg-pattern-how-we-work-desktop {
+          display: none;
+        }
+
+        #bg-pattern-how-we-work-mobile {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+
+      &__text {
+        flex-direction: column;
+
+        .button {
+          margin-top: 3rem;
+        }
       }
     }
   }
