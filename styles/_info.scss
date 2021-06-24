@@ -1,0 +1,52 @@
+.info {
+  margin-top: 8rem;
+  padding: 8rem;
+
+  .advantages {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 0;
+
+    &__card {
+      margin-right: 2rem;
+
+      .card__img {
+        margin-bottom: 1rem;
+      }
+
+      .card__title {
+        margin: 1rem 0;
+      }
+    }
+  }
+
+  .find-more {
+    margin-top: 8rem;
+    &__container {
+      position: relative;
+      background: $darkViolet;
+      color: $veryLightGray;
+      padding: 6rem 4rem;
+
+      #bg-pattern-how-we-work-desktop {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      .button {
+        position: relative;
+        z-index: 2;
+        height: fit-content;
+      }
+    }
+  }
+}

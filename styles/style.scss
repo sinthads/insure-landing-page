@@ -1,0 +1,35 @@
+@import "./components";
+@import "./navigation";
+@import "./hero";
+@import "./info";
+@import "./footer";
+
+html,
+body {
+  font-size: 16px;
+  font-family: $body;
+  max-width: $desktop-max-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  main {
+    margin-top: $header-height;
+  }
+
+  //   section,
+  //   footer {
+  //     margin: $container-vertical-margin;
+  //   }
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and(max-width: $mobile-max-width) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}

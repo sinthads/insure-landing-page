@@ -1,0 +1,53 @@
+.hero {
+  background-color: $darkViolet;
+  margin-top: $header-height;
+  position: relative;
+  padding: 8rem;
+
+  #bg-pattern-intro-left-desktop {
+    position: absolute;
+    width: 180px;
+    left: 0;
+    bottom: -52%;
+    z-index: 1;
+  }
+
+  #bg-pattern-intro-right-desktop {
+    position: absolute;
+    width: 400px;
+    right: 0;
+    top: -40px;
+    z-index: 1;
+  }
+
+  &__container {
+    max-width: $desktop-max-width;
+    display: flex;
+    flex-direction: row;
+
+    .hero__text {
+      flex: 1;
+      position: relative;
+      text-align: left;
+      color: $veryLightGray;
+      margin-right: 3rem;
+
+      p {
+        margin: 2rem 0;
+        font-weight: 400;
+      }
+    }
+
+    .hero__img {
+      flex: 1;
+      position: relative;
+
+      img {
+        position: absolute;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: $mobile-max-width) {
+}
